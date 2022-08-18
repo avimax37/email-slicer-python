@@ -4,6 +4,12 @@
 
 Email Slicer is a simple tool where the email address is provided as an input and the application returns the username and the domain of the email address as an output. It makes use of the slicing operation in Python.
 
+<!-- BUILT WITH -->
+
+## Built With
+
+![Python][python-shield]
+
 <!-- EXAMPLE -->
 
 ## Example
