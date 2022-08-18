@@ -10,17 +10,13 @@ Email Slicer is a simple tool where the email address is provided as an input an
 
 Input:
 ```
-
 avimax37@gmail.com
-
 ```
 
 Output:
 ```
-
 Your username is: avimax37
 Your domain is: gmail.com
-
 ```
 
 Here we got **`avimax37`** as username and **`gmail.com`** as domain.
@@ -71,10 +67,8 @@ VS Code or PyCharm can also be used.
 So at first we are going to ask the user to enter the email that is to be sliced.
 
 ```python
-
 print("Please enter your Email Id:")
 email = input().strip()
-
 ```
 
 Here, as usual, we are making use of the **`input()`** function to get the input from the user in form of a string. We will store this input string in **`email`** variable.
@@ -82,36 +76,28 @@ Here, as usual, we are making use of the **`input()`** function to get the input
 Also we are making use of the **`strip()`** function. **`strip()`** function will remove any additional & unwanted spacing on both sides of the input string. So that we can make sure that we have only the email in the input and not any unwanted spaces.
 
 ```python
-
 if email.find("@") != -1:
-
 ```
 
 Here we are checking if the input string contains **`@`** or not. If it contains **`@`**, then it is considered as a valid email id and we move to the next step, which is slicing the email.
 
 ```python
-
 username = email[:email.index("@")]
 domain = email[email.index("@") + 1:]
-
 ```
 
 Now, we print the **`username`** and **`domain`** to show the result.
 
 ```python
-
 print("Your username is: ", username)
 print("Your domain is: ", domain)
-
 ```
 
 If the input string does not contain **`@`**, then it is considered as an invalid email id and we get out of the loop with a warning message.
 
 ```python
-
 else:
      print("Please enter a valid Email Id.")
-
 ```
 
 <!-- LOGIC -->
