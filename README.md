@@ -16,6 +16,7 @@ Email Slicer is a simple tool where the email address is provided as an input an
 
 Input:
 ```
+Please enter Email Id:
 avimax37@gmail.com
 ```
 
